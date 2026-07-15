@@ -2,12 +2,12 @@ import { config } from '../config.js';
 import { findAdminById, verifyAuthToken } from '../services/authService.js';
 import { timingSafeEqualString } from '../utils/helpers.js';
 
-export function requireAdmin(req, res, next) {
+export async function requireAdmin(req, res, next) {
   try {
     const token = req.cookies?.[config.auth.cookieName];
     if (!token) return res.status(401).json({ ok: false, message: 'Nicht angemeldet.' });
     const payload = verifyAuthToken(token);
-    const admin = findAdminById(Number(payload.sub));
+    const admin = await findAdminById(Number(payload.sub));
     if (!admin || Number(payload.ver || 1) !== Number(admin.auth_version || 1)) return res.status(401).json({ ok: false, message: 'Sitzung ungültig.' });
     req.admin = admin;
     req.authPayload = payload;

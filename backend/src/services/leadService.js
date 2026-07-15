@@ -6,8 +6,8 @@ const STATUS_LABELS = {
   lost: 'Verloren', duplicate: 'Duplikat', archived: 'Archiviert'
 };
 
-export function publicCampaignSettings() {
-  const settings = getSettings();
+export async function publicCampaignSettings() {
+  const settings = await getSettings();
   const single = Number(settings.single_price_chf || 550);
   const besties = Number(settings.besties_price_chf || 990);
   return {
@@ -30,20 +30,24 @@ export function publicCampaignSettings() {
   };
 }
 
-export function createLead(data, context) {
-  const settings = publicCampaignSettings();
+export async function createLead(data, context) {
+  const settings = await publicCampaignSettings();
   const createdAt = nowIso();
   const normalizedEmail = normalizeEmail(data.email);
   const normalizedPhone = normalizePhone(data.phone);
   const duplicateCutoff = Date.now() - context.duplicateWindowHours * 3_600_000;
-  const existing = [...getDb().leads].reverse().find((lead) =>
+  
+  const dbStore = await getDb();
+  const existing = [...dbStore.leads].reverse().find((lead) =>
     lead.status !== 'archived' && new Date(lead.created_at).getTime() >= duplicateCutoff &&
     ((normalizedEmail && lead.normalized_email === normalizedEmail) || (normalizedPhone && lead.normalized_phone === normalizedPhone))
   );
+  
   const offerType = data.offer_type;
   const amountChf = offerType === 'besties' ? settings.bestiesPriceChf : settings.singlePriceChf;
   let lead;
-  mutateStore((store) => {
+  
+  await mutateStore((store) => {
     lead = {
       id: store.meta.nextLeadId++, reference: referenceCode(), offer_type: offerType,
       offer_label: offerType === 'besties' ? '2 Mamas / Besties' : '1 Mama', amount_chf: amountChf,
@@ -77,8 +81,8 @@ export function createLead(data, context) {
   return lead;
 }
 
-export function dashboardStats() {
-  const store = getDb();
+export async function dashboardStats() {
+  const store = await getDb();
   const leads = store.leads.filter((lead) => lead.status !== 'archived');
   const stats = { total: leads.length, new: 0, besties: 0, pipelineChf: 0, wonRevenueChf: 0, won: 0, lost: 0, duplicates: 0 };
   const sources = new Map();
@@ -130,8 +134,8 @@ function decorateLead(lead, store) {
   return { ...safe, duplicate_reference: duplicate?.reference || null };
 }
 
-export function listLeads(filters = {}) {
-  const store = getDb();
+export async function listLeads(filters = {}) {
+  const store = await getDb();
   const page = Math.max(1, Number(filters.page || 1));
   const perPage = Math.min(100000, Math.max(10, Number(filters.perPage || 25)));
   const sorters = {
@@ -148,8 +152,8 @@ export function listLeads(filters = {}) {
   };
 }
 
-export function getLead(idOrReference) {
-  const store = getDb();
+export async function getLead(idOrReference) {
+  const store = await getDb();
   const lead = /^\d+$/.test(String(idOrReference))
     ? store.leads.find((row) => row.id === Number(idOrReference))
     : store.leads.find((row) => row.reference === String(idOrReference));
@@ -162,9 +166,9 @@ export function getLead(idOrReference) {
   return { ...decorateLead(lead, store), activities };
 }
 
-export function updateLead(id, patch, admin) {
+export async function updateLead(id, patch, admin) {
   let found = false;
-  mutateStore((store) => {
+  await mutateStore((store) => {
     const lead = store.leads.find((row) => row.id === Number(id));
     if (!lead) return;
     found = true;
@@ -177,8 +181,11 @@ export function updateLead(id, patch, admin) {
     lead.updated_at = nowIso();
     store.activities.push({ id: store.meta.nextActivityId++, lead_id: lead.id, actor_type: 'admin', actor_id: admin.id, action: 'lead_updated', details_json: JSON.stringify(changes), created_at: lead.updated_at });
   });
-  return found ? getLead(id) : null;
+  return found ? await getLead(id) : null;
 }
 
 export function statusLabels() { return STATUS_LABELS; }
-export function exportLeadRows(filters = {}) { return listLeads({ ...filters, page: 1, perPage: 100000 }).rows; }
+export async function exportLeadRows(filters = {}) {
+  const result = await listLeads({ ...filters, page: 1, perPage: 100000 });
+  return result.rows;
+}

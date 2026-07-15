@@ -16,9 +16,13 @@ const leadLimiter = rateLimit({
   message: { ok: false, message: 'Zu viele Anfragen in kurzer Zeit. Bitte warte einige Minuten und versuche es erneut.' }
 });
 
-publicRouter.get('/config', (_req, res) => {
-  const settings = publicCampaignSettings();
-  res.json({ ok: true, ...settings, campaignStatus: campaignStatus({ campaign_start: settings.campaignStart, campaign_end: settings.campaignEnd }) });
+publicRouter.get('/config', async (_req, res, next) => {
+  try {
+    const settings = await publicCampaignSettings();
+    res.json({ ok: true, ...settings, campaignStatus: campaignStatus({ campaign_start: settings.campaignStart, campaign_end: settings.campaignEnd }) });
+  } catch (err) {
+    next(err);
+  }
 });
 
 publicRouter.post('/leads', leadLimiter, async (req, res, next) => {
@@ -34,14 +38,14 @@ publicRouter.post('/leads', leadLimiter, async (req, res, next) => {
       return res.status(400).json({ ok: false, message: 'Bitte prüfe deine Angaben und versuche es erneut.' });
     }
 
-    const settings = publicCampaignSettings();
+    const settings = await publicCampaignSettings();
     const status = campaignStatus({ campaign_start: settings.campaignStart, campaign_end: settings.campaignEnd });
     if (!settings.formEnabled) return res.status(410).json({ ok: false, message: 'Das Anfrageformular ist momentan deaktiviert.' });
     if (settings.campaignEnforce && status !== 'active') {
       return res.status(410).json({ ok: false, message: status === 'scheduled' ? 'Die Aktion ist noch nicht gestartet.' : 'Die Aktion ist beendet.' });
     }
 
-    const lead = createLead(data, {
+    const lead = await createLead(data, {
       ipHash: ipHash(req),
       userAgent: req.get('user-agent') || '',
       duplicateWindowHours: config.security.duplicateWindowHours

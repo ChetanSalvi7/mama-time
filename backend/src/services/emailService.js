@@ -22,7 +22,7 @@ function getTransporter() {
 
 export async function sendLeadNotification(lead) {
   const transport = getTransporter();
-  const settings = getSettings();
+  const settings = await getSettings();
   const recipient = settings.notification_email || config.contact.notificationEmail;
   if (!transport || !recipient) return { sent: false, reason: 'not_configured' };
 

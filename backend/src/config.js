@@ -60,6 +60,7 @@ export const config = {
   appBaseUrl: process.env.APP_BASE_URL || 'http://localhost:3000',
   frontendDevOrigin: process.env.FRONTEND_DEV_ORIGIN || 'http://localhost:5173',
   databasePath: resolveFromRoot(process.env.DATABASE_PATH, 'backend/data/mama-time.json'),
+  databaseUrl: process.env.DATABASE_URL || '',
   frontendDist: path.resolve(projectRoot, 'frontend/dist'),
   auth: {
     jwtSecret: process.env.JWT_SECRET || 'development-only-jwt-secret-change-before-production-0123456789',

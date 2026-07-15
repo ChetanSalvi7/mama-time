@@ -106,6 +106,8 @@ test('lead creation, duplicate detection and admin workflow', async () => {
   await request(app).post('/api/admin/auth/login').send({ email: 'admin@example.test', password: 'Changed-Test-Password-2026!' }).expect(200);
 });
 
-test.after(() => {
+test.after(async () => {
+  const { closeDb } = await import('../src/db.js');
+  await closeDb();
   fs.rmSync(tempDir, { recursive: true, force: true });
 });
