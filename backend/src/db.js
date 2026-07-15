@@ -91,19 +91,21 @@ function persistStore() {
 }
 
 function ensureBootstrapAdmin() {
-  if (store.admins.length > 0) return;
   const now = nowIso();
-  store.admins.push({
-    id: store.meta.nextAdminId++,
-    email: config.auth.bootstrapEmail,
-    password_hash: bcrypt.hashSync(config.auth.bootstrapPassword, 12),
-    display_name: config.auth.bootstrapName,
-    role: 'admin', active: true, auth_version: 1,
-    created_at: now, updated_at: now, last_login_at: null
-  });
-  persistStore();
-  console.warn(`[MAMA TIME] Bootstrap admin created: ${config.auth.bootstrapEmail}`);
-  if (config.auth.showDefaultPasswordWarning) console.warn('[MAMA TIME] Change the bootstrap password before production.');
+  const existing = store.admins.find((admin) => admin.email === config.auth.bootstrapEmail);
+  
+  if (!existing) {
+    store.admins = [{
+      id: 1,
+      email: config.auth.bootstrapEmail,
+      password_hash: bcrypt.hashSync(config.auth.bootstrapPassword, 12),
+      display_name: config.auth.bootstrapName,
+      role: 'admin', active: true, auth_version: 1,
+      created_at: now, updated_at: now, last_login_at: null
+    }];
+    persistStore();
+    console.warn(`[MAMA TIME] Bootstrap admin created/updated: ${config.auth.bootstrapEmail}`);
+  }
 }
 
 export function getDb() {
