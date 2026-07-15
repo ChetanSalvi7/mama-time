@@ -1,0 +1,31 @@
+{
+  "name": "mama-time-react-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sentinators Gym MAMA TIME campaign – responsive React frontend, Node.js/Express API and lead backoffice.",
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "setup": "node tools/setup.mjs",
+    "dev": "concurrently -k -n API,WEB -c yellow,cyan \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w backend",
+    "test": "npm run test -w backend && npm run check -w frontend",
+    "seed:demo": "node backend/scripts/seed-demo.js",
+    "reset:data": "node backend/scripts/reset-data.js",
+    "backup": "node backend/scripts/backup.js",
+    "doctor": "node tools/doctor.mjs",
+    "verify": "npm run build && npm test",
+    "create-admin": "node backend/scripts/create-admin.js"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.4"
+  }
+}

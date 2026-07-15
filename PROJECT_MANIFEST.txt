@@ -1,0 +1,29 @@
+MAMA TIME React + Node Production Kit
+
+Core entry points:
+- frontend/src/main.jsx
+- frontend/src/App.jsx
+- frontend/src/pages/LandingPage.jsx
+- frontend/src/components/LeadModal.jsx
+- backend/src/server.js
+- backend/src/app.js
+- backend/src/routes/publicRoutes.js
+- backend/src/routes/adminRoutes.js
+
+Public production output:
+- frontend/dist/
+
+Runtime data:
+- backend/data/mama-time.json (created on first start; not shipped with customer data)
+
+Start:
+- npm ci
+- npm run setup
+- npm run build
+- npm start
+
+Backoffice:
+- /admin
+
+Health:
+- /api/health

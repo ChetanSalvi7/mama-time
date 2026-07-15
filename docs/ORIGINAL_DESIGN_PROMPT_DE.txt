@@ -1,0 +1,237 @@
+Erstelle ein hochwertiges, modernes, conversion-optimiertes Landingpage-Design für die Kampagne „MAMA TIME“ von Sentinators Gym in Weite SG. Die Landingpage soll visuell stark, emotional, professionell, mobiloptimiert und direkt verkaufsorientiert sein. Ziel ist es, Mütter mit Kindern im Kindergarten- oder Schulalter anzusprechen, die tagsüber trainieren möchten, während die Kinder wieder betreut sind. Die Seite soll nicht wie ein gewöhnlicher Fitness-Flyer wirken, sondern wie eine moderne Premium-Kampagnenseite eines hochwertigen Gyms: clean, vertrauenswürdig, feminin, motivierend, klar strukturiert und mit starker Kaufabsicht. Kein billiger Discount-Look, keine überladene Optik, kein kitschiges Mami-Design, keine übertriebenen pinken Klischees. Stattdessen: Premium, self-care, Neustart, Energie, Alltagstauglichkeit, Gesundheit, Weiblichkeit, Motivation, Community und klare Angebotskommunikation.
+
+Die Landingpage ist für die Kampagne eines Premium-Fitnesscenters gedacht und soll sich harmonisch an die Markenwelt von Sentinators Gym anlehnen: modern, hochwertig, sportlich, glaubwürdig, leicht edgy, aber für Frauen zugänglicher und weicher interpretiert. Die Bildwelt soll Mütter zeigen, die natürlich, sympathisch, fit, motiviert und nahbar wirken – keine übertriebenen Bodybuilderinnen, keine unnatürlichen Model-Posen, keine unrealistischen KI-Gesichter. Die Frauen sollen etwa zwischen 28 und 45 Jahre alt wirken, gepflegt, alltagstauglich, attraktiv, selbstbewusst, aber nicht arrogant. Die Atmosphäre soll tagsüber hell und positiv sein, mit hochwertiger Gym-Umgebung und sichtbarer Premium-Studioqualität. Es darf emotional spürbar sein: „Die Kinder sind wieder in der Schule – jetzt bin ich dran.“
+
+Die Landingpage soll primär für mobile Nutzung konzipiert sein, aber auch auf Desktop hervorragend funktionieren. Sehr wichtig sind klare visuelle Hierarchien, gute Lesbarkeit, starke Call-to-Action-Buttons, logische Conversion-Führung und eine elegante, moderne Gestaltung. Die Seite soll aufgebaut sein wie eine performante Meta-Ad-Landingpage: schnell verständlich, visuell stark, wenig Ablenkung, hohe Abschlusswahrscheinlichkeit. Keine unnötige Navigation, keine irrelevanten Nebenthemen, kein überladener Footer im Fokus. Die Conversion steht klar im Mittelpunkt.
+
+Gestalte die Landingpage mit folgendem inhaltlichen Fokus:
+
+Kampagnenname:
+MAMA TIME
+
+Hauptbotschaft:
+Die Kinder sind wieder in der Schule. Jetzt bist du dran.
+
+Sub-Botschaft:
+Sichere dir jetzt dein Daytime-Abo im Sentinators Gym und trainiere dann, wenn die Kinder im Kindergarten oder in der Schule sind.
+
+Angebot:
+CHF 550.– pro Mama inklusive Membercard
+
+Besties-Angebot:
+Bring deine Mama-Bestie mit: CHF 990.– für beide statt CHF 1’100.–
+Beide sparen 10 %
+Effektiver Preis pro Mama im Duo: CHF 495.–
+
+Aktionszeitraum:
+20. Juli 2026 bis 20. August 2026
+
+Startlogik:
+Jetzt Platz sichern und nach den Schulferien starten
+
+Trainingszeiten / Positionierung:
+Daytime-Angebot für Mütter, die morgens, über Mittag oder nachmittags trainieren möchten
+Beispielhafte Nutzungszeiten: Montag bis Freitag tagsüber, z. B. 08:00–16:30 Uhr
+Kommunikation soll klar machen: ideal für Mütter, wenn die Kinder wieder betreut sind
+
+Wichtige Ziele der Landingpage:
+1. Sofort klar machen, worum es geht
+2. Emotionales Bedürfnis ansprechen: Zeit für sich selbst, Neustart, Gesundheit, Routine
+3. Das Angebot einfach und attraktiv kommunizieren
+4. Das Besties-Angebot prominent hervorheben
+5. Vertrauen in Sentinators Gym aufbauen
+6. Besucher direkt zur Anfrage / WhatsApp / Platzsicherung führen
+
+Designstil:
+- modern
+- hochwertig
+- clean
+- feminin, aber nicht verspielt
+- freundlich
+- sportlich
+- premium
+- motivierend
+- emotional
+- verkaufsstark
+- mit sommerlichem Neustart-Charakter
+- keine harten, aggressiven Bodybuilding-Vibes als Hauptlook
+- kein offensichtlicher KI-Look
+- glaubwürdige Studio-Atmosphäre
+- edel, aber zugänglich
+
+Farbwelt:
+Nutze eine hochwertige feminine Premium-Palette, passend zu Sentinators Gym:
+- dunkles Anthrazit / Charcoal als Grundbasis
+- warmes Off-White / Ivory für Flächen und Kontraste
+- weiche Rosé- / Nude- / Dusty-Pink-Akzente
+- warmes Gold / Soft Gold sparsam für Highlights
+- optional leichtes warmes Mauve / Rosé-Violett für Tiefe
+- Buttons kontraststark, hochwertig, klar sichtbar
+Der Look soll modern, elegant und conversion-optimiert sein. Nicht zu bunt, nicht zu dunkel, nicht zu hart.
+
+Typografie:
+Verwende eine starke, moderne, gut lesbare Sans-Serif-Typografie. Headlines sollen selbstbewusst, hochwertig und emotional wirken. Subheadlines sollen ruhig, klar und elegant lesbar sein. Text soll auf Mobile sehr gut funktionieren. Die Typografie soll professionell und hochwertig wirken, nicht verspielt.
+
+Hero-Bereich – besonders wichtig:
+Der Hero muss extrem stark sein und sofort die Kernbotschaft transportieren. Er ist das Herzstück der Landingpage. Der Hero soll above the fold perfekt funktionieren und direkt Interesse, Vertrauen und Handlung auslösen.
+
+Hero-Inhalt:
+- Großes emotionales Key Visual mit einer oder zwei sympathischen Müttern in einer hellen, hochwertigen Gym-Umgebung
+- Fokus auf Daytime, Neustart, Self-Care und Motivation
+- Frauen sollen natürlich, stark, positiv und alltagstauglich wirken
+- Entweder eine Mama alleine im Fokus oder zwei Mamas/Freundinnen gemeinsam
+- Die Bildsprache soll zeigen: „Jetzt nehme ich mir wieder Zeit für mich“
+- Kein überfülltes Gym, keine Kinder im Gym-Bereich, keine Männer im Fokus
+- Modernes Premium-Gym sichtbar, aber nicht zu dominant
+- Optional sanfte Tiefenunschärfe, hochwertige Lichtstimmung, warmer natürlicher Tageslicht-Look
+
+Hero-Textstruktur:
+Kleiner Eyebrow / Kicker:
+SENTINATORS GYM PRESENTS
+oder
+LIMITIERTE SOMMER-AKTION
+
+Hauptheadline:
+MAMA TIME
+
+Zweite Headline / Claim:
+Die Kinder sind wieder in der Schule. Jetzt bist du dran.
+
+Subheadline:
+Sichere dir jetzt dein Daytime-Abo im Sentinators Gym und starte nach den Schulferien mit neuer Energie, mehr Zeit für dich und einem klaren Fokus auf deine Gesundheit.
+
+Offer-Box oder hervorgehobene Preisbox:
+CHF 550.– pro Mama
+inkl. Membercard
+
+Hervorgehobene Besties-Box:
+Mit deiner Mama-Bestie:
+CHF 990.– für beide
+statt CHF 1’100.–
+Beide sparen 10 %
+
+Kurze Bullet-Vorteile direkt im Hero:
+- 12 Monate Daytime-Training
+- Ideal morgens, über Mittag und nachmittags
+- Perfekt für Mütter mit Kindern in Schule oder Kindergarten
+- Jetzt sichern, später starten
+
+Primäre CTA-Buttons im Hero:
+- Jetzt Platz sichern
+- Mit Bestie anmelden
+Optional zusätzlich kleiner Secondary CTA:
+- Direkt via WhatsApp anmelden
+
+Verknappung / Dringlichkeit direkt sichtbar:
+Nur vom 20.07.2026 bis 20.08.2026
+Limitierte Plätze verfügbar
+
+Die Landingpage soll nach dem Hero sinnvoll und verkaufspsychologisch durchdacht weitergeführt werden. Baue folgende Bereiche logisch und hochwertig auf:
+
+1. Warum MAMA TIME?
+Ein Abschnitt mit 3 bis 5 Vorteilen. Klare, prägnante Argumente:
+- Trainiere dann, wenn die Kinder betreut sind
+- Nutze deine Zeit morgens oder tagsüber sinnvoll
+- Kein Stress mit Abend-Prime-Time
+- Mehr Energie, mehr Wohlbefinden, mehr Zeit für dich
+- Ein motivierendes Umfeld im Sentinators Gym
+
+2. Für wen ist das Angebot gedacht?
+Kurzer emotionaler Zielgruppen-Abschnitt:
+Für Mütter, die nach den Ferien wieder eine Routine aufbauen möchten
+Für Frauen, die tagsüber besser trainieren können
+Für Mamas, die sich wieder fitter, stärker und wohler fühlen wollen
+Für Mütter, die lieber in einem hochwertigen Gym als allein zuhause trainieren möchten
+
+3. Angebotsvergleich
+Stelle das Einzelangebot und das Besties-Angebot übersichtlich, attraktiv und visuell stark gegenüber:
+Option 1:
+1 Mama
+CHF 550.–
+inkl. Membercard
+
+Option 2:
+2 Mamas / Besties
+CHF 990.–
+inkl. 2 Membercards
+statt CHF 1’100.–
+Beide sparen 10 %
+Nur CHF 495.– pro Mama
+
+Wichtig:
+Das Besties-Angebot soll leicht als „empfohlene Option“ oder „beliebteste Wahl“ hervorgehoben werden.
+
+4. So funktioniert’s
+Ein einfacher 3- oder 4-Schritte-Abschnitt:
+1. Angebot wählen
+2. Platz sichern
+3. Nach den Schulferien starten
+4. Gemeinsam durchziehen
+
+5. Warum Sentinators Gym?
+Ein kurzer Vertrauensbereich über das Studio:
+- modernes Premium-Gym in Weite SG
+- hochwertige Trainingsatmosphäre
+- motivierendes Umfeld
+- professionelles Studio
+- ideal für Frauen, die tagsüber trainieren möchten
+Gerne mit kleinen Icon-Fakten oder kurzen Benefit-Statements.
+
+6. Optionaler Social Proof
+Wenn sinnvoll, füge Platzhalter für Bewertungen, Testimonials oder kurze Aussagen ein. Stil:
+„Endlich ein Angebot, das perfekt in meinen Alltag als Mama passt.“
+„Tagsüber trainieren ist für mich ideal.“
+„Mit meiner Freundin zusammen zu starten hat alles einfacher gemacht.“
+Nicht übertreiben. Glaubwürdig und nahbar halten.
+
+7. FAQ-Bereich
+Integriere einen klaren, modernen FAQ-Abschnitt mit Fragen wie:
+- Was ist im Preis enthalten?
+- Ist die Membercard inklusive?
+- Wann kann ich trainieren?
+- Wann beginnt mein Abo?
+- Gilt das Angebot auch, wenn ich meine Bestie mitbringe?
+- Müssen wir gemeinsam trainieren?
+- Kann ich direkt nach der Anmeldung starten oder später?
+- Bis wann ist die Aktion gültig?
+
+8. Starker Abschluss-CTA
+Am Ende nochmals emotionaler und klarer Abschluss mit starker Handlungsaufforderung:
+Headline:
+Sichere dir jetzt deinen Platz
+Subheadline:
+Die Aktion läuft nur bis zum 20. August 2026. Sichere dir jetzt dein MAMA TIME Angebot und starte nach den Schulferien.
+Buttons:
+- Jetzt Platz sichern
+- Mit Bestie anmelden
+- WhatsApp Anfrage senden
+
+Technische / UX-Vorgaben:
+- Mobile first
+- sehr klare Scroll-Hierarchie
+- sticky CTA auf Mobile wünschenswert
+- CTA-Buttons immer gut sichtbar
+- starke Conversion-Führung
+- keine unnötige Hauptnavigation
+- moderne Karten, Badges, Soft Shadows, hochwertige Section-Wechsel
+- saubere Abstände, sehr gute Lesbarkeit
+- alle Texte auf Deutsch
+- klare Preisinszenierung
+- hochwertige Hero-Komposition
+- Landingpage soll optisch wirken wie eine professionelle Kampagnen-Microsite
+- Sections dürfen leicht modular aufgebaut sein
+- auf Desktop darf die Seite etwas editorialer und luftiger wirken, auf Mobile maximal klar und kompakt
+- das Besties-Angebot soll visuell stark performen und als smarter Deal wahrgenommen werden
+
+Visuelle Keywords:
+premium daytime fitness, modern female wellness, gym lifestyle, self care for moms, soft luxury fitness, strong but feminine, premium Swiss gym, confident mothers, clean editorial landing page, modern conversion design, summer comeback, back-to-routine campaign
+
+Wichtige emotionale Tonalität:
+Die Seite soll das Gefühl vermitteln:
+„Jetzt ist wieder Zeit für mich.“
+„Ich starte neu.“
+„Ich tue mir etwas Gutes.“
+„Gemeinsam ist es einfacher.“
+„Das passt perfekt in meinen Alltag als Mama.“
+
+Die Seite soll nicht nach einem generischen Template aussehen, sondern individuell, hochwertig und markenstark. Das fertige Design soll aussehen wie eine echte, performante Premium-Landingpage für eine Social-Media-Kampagne von Sentinators Gym, die speziell für Mütter entwickelt wurde und auf Facebook- und Instagram-Traffic optimiert ist.

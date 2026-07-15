@@ -1,0 +1,20 @@
+[Unit]
+Description=MAMA TIME React + Node application
+After=network.target
+
+[Service]
+Type=simple
+User=mamatime
+Group=mamatime
+WorkingDirectory=/var/www/mama-time
+EnvironmentFile=/var/www/mama-time/.env
+ExecStart=/usr/bin/node /var/www/mama-time/backend/src/server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/var/www/mama-time/backend/data
+
+[Install]
+WantedBy=multi-user.target

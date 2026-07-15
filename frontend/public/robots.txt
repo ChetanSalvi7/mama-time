@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Replace with the production domain before go-live:
+# Sitemap: https://example.ch/sitemap.xml

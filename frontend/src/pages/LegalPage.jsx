@@ -1,0 +1,11 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+export default function LegalPage({ type }) {
+  useEffect(() => {
+    document.body.className = 'campaign mama-time';
+    return () => { document.body.className = ''; };
+  }, []);
+  const privacy = type === 'privacy';
+  return <div className="legal-page"><header className="legal-page__header"><div className="page-shell"><div className="brand"><strong>SENTINATORS GYM</strong><span>WEITE SG</span></div></div></header><main className="page-shell legal-page__content"><Link className="admin-link" to="/">← Zurück zur Landingpage</Link><h1>{privacy ? 'Datenschutzerklärung' : 'Impressum'}</h1><p className="legal-placeholder"><strong>Vor dem Livegang ergänzen:</strong> Diese Seite ist eine technische Platzhaltervorlage. Das verantwortliche Unternehmen beziehungsweise die Rechtsberatung muss die vollständigen, korrekten Schweizer Unternehmens- und Datenschutzangaben liefern.</p>{privacy ? <><h2>Verantwortliche Stelle</h2><p>[Vollständige Firmenbezeichnung, Anschrift, E-Mail und Telefon ergänzen]</p><h2>Formularanfragen</h2><p>Beim Absenden des MAMA TIME Formulars werden die eingegebenen Kontakt- und Angebotsdaten zur Bearbeitung der Anfrage gespeichert. Zusätzlich können technische Kampagnenparameter wie UTM-Tags, Referrer, Browserinformationen und ein nicht rückrechenbarer IP-Hash für Sicherheit und Erfolgsmessung gespeichert werden.</p><h2>Aufbewahrung und Rechte</h2><p>Aufbewahrungsfristen, Auskunfts-, Berichtigungs- und Löschprozesse müssen vor dem Livegang mit den tatsächlich geltenden internen Regeln ergänzt werden.</p><h2>Dienstleister und Auslandzugriff</h2><p>Bei Zugriff durch Entwickler oder Dienstleister ausserhalb der Schweiz müssen die erforderlichen Verträge, Zugriffsregeln und Schutzmassnahmen dokumentiert werden.</p></> : <><h2>Betreiber der Website</h2><p>[Rechtlicher Firmenname]<br />[Strasse und Hausnummer]<br />[PLZ Ort], Schweiz</p><h2>Kontakt</h2><p>E-Mail: [ergänzen]<br />Telefon: [ergänzen]</p><h2>Vertretungsberechtigte Person</h2><p>[Name und Funktion ergänzen]</p><h2>Register- und Mehrwertsteuerangaben</h2><p>[Nur soweit anwendbar ergänzen]</p></>}</main></div>;
+}

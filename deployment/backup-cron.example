@@ -1,0 +1,2 @@
+# Daily backup at 02:15. Install with: crontab -e
+15 2 * * * cd /var/www/mama-time && /usr/bin/npm run backup >> /var/log/mama-time-backup.log 2>&1

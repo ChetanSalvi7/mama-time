@@ -1,0 +1,28 @@
+MAMA_TIME_React_Node_Complete_Production/
+├── frontend/                         React 18 + Vite application
+│   ├── src/
+│   │   ├── components/               public-form and admin components
+│   │   ├── lib/                      API, auth and campaign utilities
+│   │   ├── pages/                    landing page, legal pages and backoffice
+│   │   └── styles/                   responsive landing/admin design system
+│   ├── public/assets/                optimized campaign images and metadata
+│   └── dist/                         ready-built production frontend
+├── backend/                          Node.js + Express application
+│   ├── src/
+│   │   ├── middleware/               JWT and CSRF protection
+│   │   ├── routes/                   public, auth and admin API endpoints
+│   │   ├── services/                 leads, authentication and email
+│   │   └── utils/                    dates, hashes, CSV and helpers
+│   ├── scripts/                      admin, demo, reset and backup tools
+│   ├── tests/                        API integration tests
+│   └── data/                         writable runtime data directory
+├── deployment/                       Nginx, systemd and backup examples
+├── docs/                             complete English engineering handoff
+├── reference/                        approved visual references
+├── tools/                            setup and production doctor scripts
+├── Dockerfile                        multi-stage production image
+├── docker-compose.yml                one-container deployment
+├── ecosystem.config.cjs              PM2 single-process configuration
+├── package-lock.json                 pinned reproducible dependencies
+├── README_FIRST_EN.md                developer starting point
+└── OWNER_GO_LIVE_CHECKLIST_DE.md      owner launch checklist
